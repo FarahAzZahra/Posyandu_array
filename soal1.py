@@ -5,13 +5,10 @@ bMax = 0
 def hitungMinMax(arrBerat):
     global bMin, bMax
     # Definisikan Proses Mencari Berat Maximum Dan Minimum
+    arrBerat.sort()
     bMin = arrBerat[0]
-    for n in arrBerat:
-        if bMax < n :
-            bMax = n
-        if bMin > n :
-            bMin = n
-
+    bMax = arrBerat[len(arrBerat)-1]
+    
 def rerata(arrBerat):
     total = 0
     for n in arrBerat:
